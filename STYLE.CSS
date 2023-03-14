@@ -1,0 +1,293 @@
+:root{
+    --Pink:hsl(322, 100%, 66%);
+    --Very-Pale-Cyan:hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    font-size: 18px;
+}
+.container{
+    padding: 0 50px;
+}
+.hero{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.hero .container .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .container .header .btn-1{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    width: 170px;
+    height: 45px;
+    box-shadow: 0px 0px 22px -11px #000;
+    font-weight: 600;
+}
+.hero .container .content{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .container .content .right-hero img{
+    width: 550px;
+    height: 425px;
+}
+.hero .container .content .left-hero{
+    width: 530px;
+}
+.hero .container .content .left-hero .left-hero-h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.hero .container .content .left-hero .left-hero-p{
+    margin: 30px 0;
+    font-weight: 400;
+}
+.hero .container .content .left-hero .btn-2{
+    width: 200px;
+    height: 50px;
+    background-color: var(--Pink);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+.card,
+.card-2{
+    box-shadow: 0px 0px 47px -40px #000;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.card .img img{
+    width: 500px;
+    height: 100%;
+}
+.card .content{
+    margin: 0 100px;
+}
+.card .content h1{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.card .content p{
+    color: var(--Grayish-Blue);
+}
+.card-2 .img img{
+    margin-left: 80px;
+}
+.one {
+    max-width: 300px;
+}
+.one img{
+    color: white;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+.one .info .loc{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.one .info .loc img{
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+.career,
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about a,
+.career a{
+    color: white;
+    margin: 10px 0;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    color: white; 
+    font-size: 0.6rem;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+.icons img{
+    width: 30px;
+    margin: 0 5px;
+}
+.copy{
+    margin-top: 50px;
+}
+.loc{
+    margin: 30px 0;
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    margin-top: 300px;
+}
+footer .card{
+    background-color: white;
+    width: 800px;
+    height: 240px;
+    box-shadow: 0px 0px 38px -14px #000;
+    border-radius: 10px;
+    padding: 50px;
+    position: relative;
+    left: 21%;
+    top: -35%;
+    display: flex;
+    flex-direction: column;
+}
+footer .card button{
+    box-shadow: 0px 0px 38px -14px #000;
+    margin-top: 14px;
+    width: 266px;
+    height: 55px;
+    background-color: var(--Pink);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.content .container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -132px 20px 0 ;
+}
+    @media (max-width:375px) {
+        .copy{
+            margin-top: 0px;
+            margin-left: 25px;
+        }
+        .social{
+            align-items: center;
+        }
+        .content .container{
+            display: inline-block;
+            margin-top: -33px;
+        }
+        footer .card {
+            width: 320px;
+            height: 150px;
+            padding: 24px;
+            left: 0%;
+            top: -9%;
+        }
+        footer{
+             height: 950px;
+        }
+       
+        footer .card h1{
+            font-size: 1rem;
+        }
+        .cont-3{
+            position: absolute;
+            text-align: center;
+            min-width: 250px;
+            bottom: -170%;
+        }
+        .card .content{
+            margin: 0 100px;
+        }
+        .card-2 .img img {
+            margin-right: 80px;
+        }
+        .card .cont-1{
+            position: absolute;
+            text-align: center;
+            min-width: 250px;
+            bottom: -50%;
+        }
+        .cont-2{
+            position: absolute;
+            bottom: -110%;
+            text-align: center;
+            min-width: 250px;
+            margin-top: -50px;
+        }
+        .card,
+        .card-2{
+            flex-direction: column;
+            width: 300px;
+            font-size: 0.8rem;
+            margin: 10px auto;
+        }
+        .card .img img{
+            position:relative;
+            width: 200px;
+            margin-top: 55px;
+            height: 100% ;
+        }
+        .container{
+            padding: 0 1px;
+        }
+        .hero{
+            background-image: url(./images/bg-hero-mobile.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+        }
+        .hero .container .header .btn-1{
+            width: 100px;
+            height: 25px;
+        }
+        .hero .container .header .logo{
+            width: 100px;
+        }
+        .hero .container .content{
+            display: inline-block;
+            max-width: 100%;
+            text-align: center;
+        }
+        .hero .container .content .right-hero img{
+            width: 300px;
+            height: 220px;
+        }
+        .hero .container .content .left-hero{
+            width: 100%;
+        }
+        .hero .container .content .left-hero .left-hero-h1{
+            margin-top: 30px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .hero .container .content .left-hero .left-hero-p{
+            font-size: 1rem;
+        }
+        .hero .container .content .left-hero .btn-2{
+            margin-bottom: 50px;
+        }
+    }
